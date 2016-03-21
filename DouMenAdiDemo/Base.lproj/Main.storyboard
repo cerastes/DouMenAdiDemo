@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y3z-uU-Con">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,323 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPa-zC-cai">
+                                <rect key="frame" x="20" y="64" width="560" height="89.5"/>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.043137254899999998" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="inline"/>
+                                <connections>
+                                    <segue destination="Dk1-Ta-9nm" kind="push" id="P7R-9w-mG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-VN-VPM">
+                                <rect key="frame" x="20" y="153.5" width="560" height="89"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="普通插屏广告位"/>
+                                <connections>
+                                    <segue destination="4Yk-5R-wB7" kind="push" id="9Za-Sz-qKS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2v-9d-JSj">
+                                <rect key="frame" x="20" y="242.5" width="560" height="89.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.64705882349999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="开屏广告位"/>
+                                <connections>
+                                    <segue destination="Mu1-PP-hz7" kind="push" id="32j-hj-02E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is6-ik-OnW">
+                                <rect key="frame" x="20" y="332" width="560" height="89.5"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.6588235294" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="信息流顶部广告位"/>
+                                <connections>
+                                    <segue destination="4yN-Gv-23z" kind="push" id="oxb-8E-lQ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pis-0W-1DV">
+                                <rect key="frame" x="20" y="421.5" width="560" height="89"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="多宝屋广告位"/>
+                                <connections>
+                                    <segue destination="82p-TK-Mpl" kind="push" id="Uqu-sN-AiX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4I-Uh-fJc">
+                                <rect key="frame" x="20" y="510.5" width="560" height="89.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Native广告位"/>
+                                <connections>
+                                    <segue destination="yuR-op-bdd" kind="push" id="6PA-Q3-yPj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H2v-9d-JSj" firstAttribute="height" secondItem="BPa-zC-cai" secondAttribute="height" id="1Hm-i0-2kb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Is6-ik-OnW" secondAttribute="trailing" id="1Ol-SR-zZj"/>
+                            <constraint firstItem="BPa-zC-cai" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5HD-sq-HMW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l4I-Uh-fJc" secondAttribute="trailing" id="5Tg-v8-PRc"/>
+                            <constraint firstItem="j6e-VN-VPM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5g7-vv-kdA"/>
+                            <constraint firstItem="Pis-0W-1DV" firstAttribute="height" secondItem="BPa-zC-cai" secondAttribute="height" id="Av4-hN-0uX"/>
+                            <constraint firstItem="Is6-ik-OnW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nq3-Kw-h3z"/>
+                            <constraint firstItem="l4I-Uh-fJc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qpz-gq-OEU"/>
+                            <constraint firstItem="l4I-Uh-fJc" firstAttribute="height" secondItem="BPa-zC-cai" secondAttribute="height" id="XjQ-Dg-fKf"/>
+                            <constraint firstItem="Is6-ik-OnW" firstAttribute="top" secondItem="H2v-9d-JSj" secondAttribute="bottom" id="Y5X-oN-rg9"/>
+                            <constraint firstItem="Pis-0W-1DV" firstAttribute="top" secondItem="Is6-ik-OnW" secondAttribute="bottom" id="Y7I-Kf-vZf"/>
+                            <constraint firstItem="j6e-VN-VPM" firstAttribute="top" secondItem="BPa-zC-cai" secondAttribute="bottom" id="ap2-PY-sLK"/>
+                            <constraint firstItem="j6e-VN-VPM" firstAttribute="height" secondItem="BPa-zC-cai" secondAttribute="height" id="bjz-Mj-UHN"/>
+                            <constraint firstItem="Is6-ik-OnW" firstAttribute="height" secondItem="BPa-zC-cai" secondAttribute="height" id="fFa-5H-3F1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j6e-VN-VPM" secondAttribute="trailing" id="fyg-Aq-oET"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H2v-9d-JSj" secondAttribute="trailing" id="goZ-MC-rFa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l4I-Uh-fJc" secondAttribute="bottom" id="hlI-YJ-ia3"/>
+                            <constraint firstItem="Pis-0W-1DV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i7E-d7-Xm2"/>
+                            <constraint firstItem="H2v-9d-JSj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k2V-IM-xAl"/>
+                            <constraint firstItem="BPa-zC-cai" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uPv-Oc-QW2"/>
+                            <constraint firstItem="H2v-9d-JSj" firstAttribute="top" secondItem="j6e-VN-VPM" secondAttribute="bottom" id="ubs-Ls-Ggr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BPa-zC-cai" secondAttribute="trailing" id="vDC-87-1Hc"/>
+                            <constraint firstItem="l4I-Uh-fJc" firstAttribute="top" secondItem="Pis-0W-1DV" secondAttribute="bottom" id="vOR-QD-aMn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pis-0W-1DV" secondAttribute="trailing" id="yUw-Xn-jBK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0vy-PO-CXD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="580" y="708"/>
+        </scene>
+        <!--普通插屏广告位-->
+        <scene sceneID="NEH-54-An6">
+            <objects>
+                <viewController id="4Yk-5R-wB7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A38-hu-4Fh"/>
+                        <viewControllerLayoutGuide type="bottom" id="okt-Hz-qmc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ewz-PE-vN9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D2-eN-dt3">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1Ht-st-pfI"/>
+                                    <constraint firstAttribute="width" constant="92" id="haR-pI-4B9"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show2:" destination="4Yk-5R-wB7" eventType="touchUpInside" id="HFQ-0c-pVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3D2-eN-dt3" firstAttribute="centerX" secondItem="Ewz-PE-vN9" secondAttribute="centerX" id="OCu-AL-AVw"/>
+                            <constraint firstItem="3D2-eN-dt3" firstAttribute="centerY" secondItem="Ewz-PE-vN9" secondAttribute="centerY" id="YNQ-hc-EAx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="普通插屏广告位" id="OAl-Oi-hHo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQZ-E6-xVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BTo-Ht-Vaa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y3z-uU-Con" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gcc-ru-MDU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="84A-tz-YP1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFX-hb-Q1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-373" y="690"/>
+        </scene>
+        <!--开屏广告位-->
+        <scene sceneID="Tbt-Pe-fnf">
+            <objects>
+                <viewController id="Mu1-PP-hz7" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dz-Af-VW0"/>
+                        <viewControllerLayoutGuide type="bottom" id="pvU-hM-gmt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HqF-Ck-FO7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1md-N5-qQN">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="RzX-PM-gzo"/>
+                                    <constraint firstAttribute="height" constant="41" id="cDf-sc-Big"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show3:" destination="Mu1-PP-hz7" eventType="touchUpInside" id="S77-Jc-0kW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1md-N5-qQN" firstAttribute="centerY" secondItem="HqF-Ck-FO7" secondAttribute="centerY" id="uIt-cH-O8y"/>
+                            <constraint firstItem="1md-N5-qQN" firstAttribute="centerX" secondItem="HqF-Ck-FO7" secondAttribute="centerX" id="vSJ-bA-khP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="开屏广告位" id="j0s-Zi-wyM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7SV-zo-UVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="805"/>
+        </scene>
+        <!--多宝屋广告位-->
+        <scene sceneID="qkk-7w-dP9">
+            <objects>
+                <viewController id="82p-TK-Mpl" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Kh-Yh-bxs"/>
+                        <viewControllerLayoutGuide type="bottom" id="nBY-JG-7rh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B7N-KS-F76">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHg-1Z-uOb">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4Im-TJ-dwm"/>
+                                    <constraint firstAttribute="width" constant="92" id="fzT-cL-0bp"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show5:" destination="82p-TK-Mpl" eventType="touchUpInside" id="yzk-ce-LFM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GHg-1Z-uOb" firstAttribute="centerX" secondItem="B7N-KS-F76" secondAttribute="centerX" id="XHQ-nK-EOb"/>
+                            <constraint firstItem="GHg-1Z-uOb" firstAttribute="centerY" secondItem="B7N-KS-F76" secondAttribute="centerY" id="cVw-vi-EZW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="多宝屋广告位" id="oSm-uQ-dBf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGd-cr-Nbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="1573"/>
+        </scene>
+        <!--inline广告位(主要为banner)-->
+        <scene sceneID="6If-oi-dUh">
+            <objects>
+                <viewController title="inline广告位(主要为banner)" id="Dk1-Ta-9nm" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="otM-90-8aD"/>
+                        <viewControllerLayoutGuide type="bottom" id="TFT-OO-8lN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bDK-tZ-iRN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQh-WS-6Df">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="IX2-Sm-UI4"/>
+                                    <constraint firstAttribute="height" constant="41" id="S5M-Ln-bhL"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show1:" destination="Dk1-Ta-9nm" eventType="touchUpInside" id="KgP-wB-Ec3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZQh-WS-6Df" firstAttribute="centerY" secondItem="bDK-tZ-iRN" secondAttribute="centerY" id="Gr8-ly-gH0"/>
+                            <constraint firstItem="ZQh-WS-6Df" firstAttribute="centerX" secondItem="bDK-tZ-iRN" secondAttribute="centerX" id="R3Q-cN-CPn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="inline" id="K2y-h8-mbX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qd2-lG-XpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="-575"/>
+        </scene>
+        <!--信息流顶部广告位-->
+        <scene sceneID="sgY-vn-P4z">
+            <objects>
+                <viewController id="4yN-Gv-23z" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GZ0-FJ-lq2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rea-bq-wO3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0O-85-o3A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-tP-y9h">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="d9H-IO-Wgu"/>
+                                    <constraint firstAttribute="width" constant="92" id="dwa-hZ-qtH"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show4:" destination="4yN-Gv-23z" eventType="touchUpInside" id="fG4-4r-jX5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jSR-tP-y9h" firstAttribute="centerX" secondItem="g0O-85-o3A" secondAttribute="centerX" id="W4j-KS-C8M"/>
+                            <constraint firstItem="jSR-tP-y9h" firstAttribute="centerY" secondItem="g0O-85-o3A" secondAttribute="centerY" id="s81-Qm-CEC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="信息流顶部广告位" id="l54-bt-MNb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hy0-bL-cUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421" y="1519"/>
+        </scene>
+        <!--Native广告位-->
+        <scene sceneID="fLp-BP-BmX">
+            <objects>
+                <viewController id="yuR-op-bdd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wqr-Rf-khA"/>
+                        <viewControllerLayoutGuide type="bottom" id="wsF-QZ-ivD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9LM-iy-3QX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-6g-aUE">
+                                <rect key="frame" x="254" y="279.5" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Cru-zb-Hty"/>
+                                    <constraint firstAttribute="width" constant="92" id="ZiY-8o-Vnk"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="show6:" destination="yuR-op-bdd" eventType="touchUpInside" id="2ii-pI-XNp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y2r-6g-aUE" firstAttribute="centerY" secondItem="9LM-iy-3QX" secondAttribute="centerY" id="0Nt-rL-rqj"/>
+                            <constraint firstItem="Y2r-6g-aUE" firstAttribute="centerX" secondItem="9LM-iy-3QX" secondAttribute="centerX" id="i9n-em-nd5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Native广告位" id="qcz-wZ-qZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyi-06-oc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="1863"/>
         </scene>
     </scenes>
 </document>
